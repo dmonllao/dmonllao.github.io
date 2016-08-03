@@ -1,0 +1,31 @@
+{
+  "name": "davidmonllao",
+  "version": "1.0.0",
+  "description": "David Monllaó website",
+  "main": "index.html",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-csslint": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmonllao/davidmonllao.git"
+  },
+  "keywords": [
+    "david",
+    "monllaó",
+    "monllao",
+    "website"
+  ],
+  "author": "David Monllaó",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/dmonllao/davidmonllao/issues"
+  },
+  "homepage": "https://github.com/dmonllao/davidmonllao#readme"
+}
