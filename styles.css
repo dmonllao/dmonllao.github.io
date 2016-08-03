@@ -1,5 +1,5 @@
 .main {
-    height: 70%;
+    height: 85%;
 }
 
 .mdl-navigation > .mdl-navigation__link {
@@ -31,22 +31,43 @@
     opacity: 0.7;
 }
 
+.dm-project img {
+    width: 50%;
+}
+
+@media only screen and (min-width: 1024px) {
+    .dm-project img {
+        width: 30%;
+    }
+}
+
 .dm-project-title {
     margin: auto 0;
+}
+
+@media only screen and (max-width: 767px) {
+    h1 {
+        font-size: 20px;
+    }
 }
 
 .dm-project-title span {
     font-size: 30px;
 }
 
+/* Because of the dark background.*/
+.dm-vimide .dm-project-title {
+    color: #DDDDDD;
+}
+
+.dm-moodle {
+    background-color: #f98012;
+}
+
 .dm-eatthisone {
     background-color: #ffef86;
 }
 
-.dm-eatthisone img {
-    width: 50%;
-}
-
-.dm-vimide img {
-    width: 100%;
+.dm-vimide {
+    background-color: #292929;
 }

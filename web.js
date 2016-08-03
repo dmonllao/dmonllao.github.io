@@ -31,6 +31,7 @@
             if (classes[i] !== 'dm-project') {
                 // Skip the dm-.
                 projectId = classes[i].substring(3);
+                break;
             }
         }
 
