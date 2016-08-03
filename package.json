@@ -1,16 +1,13 @@
 {
   "name": "davidmonllao",
   "version": "1.0.0",
-  "description": "David Monllaó website",
+  "description": "David Monllaó Olivé website",
   "main": "index.html",
   "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-contrib-csslint": "^1.0.0",
     "grunt-contrib-watch": "^1.0.0"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -20,12 +17,14 @@
     "david",
     "monllaó",
     "monllao",
+    "olive",
+    "olivé",
     "website"
   ],
   "author": "David Monllaó",
   "license": "GPL-3.0",
   "bugs": {
-    "url": "https://github.com/dmonllao/davidmonllao/issues"
+    "url": "https://github.com/dmonllao/dmonllao.github.io/issues"
   },
-  "homepage": "https://github.com/dmonllao/davidmonllao#readme"
+  "homepage": "https://github.com/dmonllao/dmonllao.github.io"
 }
