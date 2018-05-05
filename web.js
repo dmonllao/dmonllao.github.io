@@ -2,7 +2,7 @@
 
     var currentlyHighlighted = null;
 
-    var projects = $('.dm-project');
+    var projects = $('.dm-cell');
 
     var expand = function(ev) {
 
@@ -21,14 +21,14 @@
         // Reduce other's
         // Increase height while decreasing the other row's height.
         parentRow.siblings().css('height', '25%');
-        parentRow.siblings().find('.dm-project').css('opacity', '0.5');
+        parentRow.siblings().find('.dm-cell').css('opacity', '0.5');
 
         // Get the project id.
         var projectId = null;
         var classes = project.attr('class').split(/\s+/)
         for (var i in classes) {
             // Hacky but who cares.
-            if (classes[i] !== 'dm-project') {
+            if (classes[i] !== 'dm-cell') {
                 // Skip the dm-.
                 projectId = classes[i].substring(3);
                 break;
@@ -41,16 +41,16 @@
             defaultHTML: project.html()
         };
 
-        // Delegate to the appropriate function.
-        highlightProject[projectId](project);
+        // TODO Delegate to the appropriate function for specific stuff.
+        //highlightProject[projectId](project);
     };
 
     var reset = function(ev) {
 
         // Collapse them all.
-        $('.dm-project').css('width', '');
-        $('.dm-project').css('opacity', '');
-        $('.dm-projects-row').css('height', '');
+        $('.dm-cell').css('width', '');
+        $('.dm-cell').css('opacity', '');
+        $('.dm-cells-row').css('height', '');
 
         // Restore to the default the currently highlighted one.
         if (currentlyHighlighted !== null) {
@@ -62,17 +62,17 @@
     };
 
     var highlightProject = {
-        moodle: function(project) {
-            project.find('.dm-project-content').html('asdasd');
+        github: function(project) {
+            project.find('.dm-cell-content').html('asdasd');
         },
-        eatthisone: function(project) {
-            project.find('.dm-project-content').html('asdasd');
+        twitter: function(project) {
+            project.find('.dm-cell-content').html('asdasd');
         },
-        vimide: function(project) {
-            project.find('.dm-project-content').html('asdasd');
+        linkedin: function(project) {
+            project.find('.dm-cell-content').html('asdasd');
         },
-        badassquest: function(project) {
-            project.find('.dm-project-content').html('asdasd');
+        slideshare: function(project) {
+            project.find('.dm-cell-content').html('asdasd');
         }
     };
 

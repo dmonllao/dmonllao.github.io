@@ -6,68 +6,73 @@
     line-height: normal;
 }
 
-.dm-projects-row {
+.dm-cells-row {
     -moz-transition: height 2s;
     -o-transition: height 2s;
     -webkit-transition: height 2s;
     transition: height 2s;
     width: 100%;
     height: 50%;
-    text-align: center;
     display: inline-flex;
 }
 
-.dm-project {
+.dm-cell {
     -moz-transition: width 2s;
     -o-transition: width 2s;
     -webkit-transition: width 2s;
     transition: width 2s;
-    text-align: center;
     border-style: solid;
     width: 100%;
     min-width: 25%;
     white-space: nowrap;
     overflow: hidden;
     opacity: 0.7;
+    display: inline-block;
+    text-align: center;
 }
 
-.dm-project img {
-    width: 50%;
+.dm-cell a {
+  color: white;
+  font-size: 9em;
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  top: calc(35%);
 }
 
-@media only screen and (min-width: 1024px) {
-    .dm-project img {
-        width: 30%;
+@media only screen and (max-width: 1024px) {
+    .dm-cell a {
+        font-size: 7em;
     }
-}
-
-.dm-project-title {
-    margin: auto 0;
 }
 
 @media only screen and (max-width: 767px) {
-    h1 {
-        font-size: 20px;
+    .dm-cell a {
+        font-size:5em;
     }
 }
 
-.dm-project-title span {
-    font-size: 30px;
+.dm-github {
+    background-color: #ffffff;
 }
 
-/* Because of the dark background.*/
-.dm-vimide .dm-project-title {
-    color: #DDDDDD;
+.dm-github i {
+    color: black;
 }
 
-.dm-moodle {
-    background-color: #f98012;
+.dm-twitter {
+    background-color: #1DA1F2;
 }
 
-.dm-eatthisone {
-    background-color: #ffef86;
+.dm-linkedin {
+    background-color: #4875B4;
 }
 
-.dm-vimide {
-    background-color: #292929;
+.dm-slideshare {
+    background-color: #ffffff;
+}
+
+.dm-slideshare i {
+    color: black;
 }
